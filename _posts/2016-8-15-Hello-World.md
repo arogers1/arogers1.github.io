@@ -8,3 +8,5 @@ title: First Post
 For some reason it is still linking to the old default post that I overwrote.
 
 Let's see if this edit fixes that.
+
+Turns out it was just a browser caching problem. Cool.
