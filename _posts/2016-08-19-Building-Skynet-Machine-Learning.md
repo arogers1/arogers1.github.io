@@ -25,5 +25,5 @@ How about this one: 1,14,91,364,1001,?
 
 Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns around us. Take, for example, this chart:
 
-![alt text][http://www.mathresources.com/products/insidemath/figures/scatpl02.png](http://www.mathresources.com/products/insidemath/figures/scatpl02.png)
+![alt text](http://www.mathresources.com/products/insidemath/figures/scatpl02.png)
 
