@@ -19,13 +19,22 @@ How does a machine "learn"? What does it even mean for a machine to learn? Under
 
 Machine learning is essentially a game of pattern recognition. Humans are really good at pattern recognition. Just for fun, try finding the patterns in these examples:
 
-What's the next number in this sequence: 1,2,4,8,16,?
+What's the next number in this sequence: 
+```
+1,2,4,8,16,?
+```
 
-That was too easy. Name the next number in this sequence: 1,1,2,3,5,8,13,21,?
+That was too easy. Name the next number in this sequence: 
+```
+1,1,2,3,5,8,13,21,?
+```
 
-How about this one: 1,14,91,364,1001,?
+How about this one: 
+```
+1,14,91,364,1001,?
+```
 
-Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. For example, the function f(x) that generates the first sequence is f(x) = 2^x. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns around us. Take, for example, this chart:
+Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. For example, the function f(x) that generates the first sequence is f(x) = 2^x. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns all over the universe. Take, for example, this chart:
 
 ![alt text](http://www.mathresources.com/products/insidemath/figures/scatpl02.png)
 
@@ -44,4 +53,8 @@ Where x is the runner's time spent training, t is the unknown function that gene
 
 So now you're probably thinking, "this is absolutely fascinating, except what does this have to do with machine learning, the supposed subject of this post?" Great question, reader. The answer is that in this chart and its corresponding function f(x) we have found a great candidate for using machine learning. Because we know some f(x) exists but we cannot find it through analytical methods due to the random noise (ε), the best we can do is approximate f, and that's where machine learning comes in. We can come up with hypothesis functions, h(x), that approximate f(x), and pick the h(x) that best approximates f.
 
-That last sentence was loaded, of course. First, how do we define "best" when we say pick the h that "best" approximates f? Second, how do we even come up with the hypothesis functions at all?
+That last sentence was loaded, of course. First, how do we define "best" when we say pick the h that "best" approximates f? Second, how do we even come up with the hypothesis functions at all? It turns out those two questions are closely related. We'll go into the answers in more detail in subsequent posts, but for now let's just focus on the runner example.
+
+Let's imagine the simplest hypothesis function we could use to approximate our f: a line. Great, now we've answered out second question: we come up with our hypothesis functions by coming up with different lines and see how well they fit the data. But we still need to define what "best" means when it comes to choosing which line is best. It's not too hard think of a line that fits our data (approximates f) really well. It looks something like this:
+
+![alt text](../images/scatpl_runners_line.png)
