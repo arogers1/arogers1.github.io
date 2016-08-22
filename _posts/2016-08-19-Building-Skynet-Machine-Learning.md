@@ -25,7 +25,23 @@ That was too easy. Name the next number in this sequence: 1,1,2,3,5,8,13,21,?
 
 How about this one: 1,14,91,364,1001,?
 
-Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns around us. Take, for example, this chart:
+Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. For example, the function f(x) that generates the first sequence is f(x) = 2^x. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns around us. Take, for example, this chart:
 
 ![alt text](http://www.mathresources.com/products/insidemath/figures/scatpl02.png)
 
+This (made-up) graph shows a handful of examples of runners' times to run 100 meters compared to their time spent training. The pattern is clear: runners who spent more time training had faster 100 meter times in general. However, there isn't necessarily a cut and dry function that would generate all those exact points as a function of training time. Well, there actually are functions that could be generate that *specific* set of points exactly, but if you added more examples of runners and their 100 meter times they almost certainly wouldn't predict all the new runners' times perfectly. In other words, there is no function that we can practically discover that would perfectly predict the set of all runners' 100 meter times compared to training time, even though there is a very obvious pattern of how 100 meter time is related to training time. So we know two things:
+
+1. There is some *unknown* underlying function that defines how fast runners run 100 meters versus their time spent training, and
+2. That function seems to be subject to random noise and is therefore likely to remain unknown, at least the exact function.
+
+So we could define the function, f, for runners' 100 meter times as:
+
+```
+f(x) = t(x) + ε
+```
+
+Where x is the runner's time spent training, t is the unknown function that generates 100 meter times from x, and ε is the stochastic (a fancy word for random) factor that makes our plot look noisy.
+
+So now you're probably thinking, "this is absolutely fascinating, except what does this have to do with machine learning, the supposed subject of this post?" Great question, reader. The answer is that in this chart and its corresponding function f(x) we have found a great candidate for using machine learning. Because we know some f(x) exists but we cannot find it through analytical methods due to the random noise (ε), the best we can do is approximate f, and that's where machine learning comes in. We can come up with hypothesis functions, h(x), that approximate f(x), and pick the h(x) that best approximates f.
+
+That last sentence was loaded, of course. First, how do we define "best" when we say pick the h that "best" approximates f? Second, how do we even come up with the hypothesis functions at all?
