@@ -20,7 +20,9 @@ How does a machine "learn"? What does it even mean for a machine to learn? Under
 Machine learning is essentially a game of pattern recognition. Humans are really good at pattern recognition. Just for fun, try finding the patterns in these examples:
 
 What's the next number in this sequence: 1,2,4,8,16,?
+
 That was too easy. Name the next number in this sequence: 1,1,2,3,5,8,13,21,?
+
 How about this one: 1,14,91,364,1001,?
 
 Kudos if you got the last one, it's pretty arcane compared to the other two. These patterns have something in common - they are all perfectly predictable. There is an underlying function that generates each number in the sequence such that you can get the exact right answer to the question "find the nth number" every time as long as you know the underlying function. Unfortunately, in the real world almost nothing is perfectly predictable. There is no mathematical function (at least that we know of) to perfectly predict the price of a given stock at any given time, for example. But even though the world around us is not perfectly predictable, there are clearly patterns around us. Take, for example, this chart:
