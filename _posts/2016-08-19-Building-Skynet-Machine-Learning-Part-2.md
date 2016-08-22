@@ -61,17 +61,23 @@ We will go into this in far more detail in a subsequent post, but there is a gen
 
 This post has covered several topics fairly quickly, and there is far more depth to go into on each of these topics. However, we'll save the in-depth discussion for later posts. For now, let's wrap up this post by summarizing a few key points:
 
+#### When Can Machine Learning Be Used?
+
 First, let's think about when machine learning is even applicable. What are the key attributes of our 100 meter time example that make it a viable problem to be solved by machine learning?
 
 1. There is a pattern to be found.
 2. That pattern can't be perfectly defined by a mathematical function that we can directly discover.
 3. We have sample data to give us an idea of the underlying pattern function.
 
+#### How Does Machine Learning Work?
+
 In cases where all three of these requirements are met, what must be done to apply machine learning?
 
 1. Come up with a set of hypothesis functions to approximate the pattern's underlying function from our sample data.
 2. Define an error function that determines how well a hypothesis fits our data.
 3. Pick the hypothesis that minimizes that error function.
+
+#### How Do We Come Up With Hypotheses?
 
 And finally, we touched on the idea of in-sample and out of sample error and under/overfitting.
 
