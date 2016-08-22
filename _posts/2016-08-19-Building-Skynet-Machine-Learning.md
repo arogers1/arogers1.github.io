@@ -38,23 +38,6 @@ Kudos if you got the last one, it's pretty arcane compared to the other two. The
 
 ![alt text](http://www.mathresources.com/products/insidemath/figures/scatpl02.png)
 
-This (made-up) graph shows a handful of examples of runners' times to run 100 meters compared to their time spent training. The pattern is clear: runners who spent more time training had faster 100 meter times in general. However, there isn't necessarily a cut and dry function that would generate all those exact points as a function of training time. Well, there actually are functions that could be generate that *specific* set of points exactly, but if you added more examples of runners and their 100 meter times they almost certainly wouldn't predict all the new runners' times perfectly. In other words, there is no function that we can practically discover that would perfectly predict the set of all runners' 100 meter times compared to training time, even though there is a very obvious pattern of how 100 meter time is related to training time. So we know two things:
+This (made-up) graph shows a handful of examples of runners' times to run 100 meters compared to their time spent training. The pattern is clear: runners who spent more time training had faster 100 meter times in general. However, there isn't necessarily a cut and dry function that would generate all those exact points as a function of training time. Well, there actually are functions that could generate this *specific* set of points exactly, but if you added more examples of runners and their 100 meter times they almost certainly wouldn't predict all the new runners' times perfectly. In other words, there is no function that we can practically discover that would perfectly predict the set of all runners' 100 meter times compared to training time, even though there is a very obvious pattern of how 100 meter time is related to training time.
 
-1. There is some *unknown* underlying function that defines how fast runners run 100 meters versus their time spent training, and
-2. That function seems to be subject to random noise and is therefore likely to remain unknown, at least the exact function.
-
-So we could define the function, f, for runners' 100 meter times as:
-
-```
-f(x) = t(x) + ε
-```
-
-Where x is the runner's time spent training, t is the unknown function that generates 100 meter times from x, and ε is the stochastic (a fancy word for random) factor that makes our plot look noisy.
-
-So now you're probably thinking, "this is absolutely fascinating, except what does this have to do with machine learning, the supposed subject of this post?" Great question, reader. The answer is that in this chart and its corresponding function f(x) we have found a great candidate for using machine learning. Because we know some f(x) exists but we cannot find it through analytical methods due to the random noise (ε), the best we can do is approximate f, and that's where machine learning comes in. We can come up with hypothesis functions, h(x), that approximate f(x), and pick the h(x) that best approximates f.
-
-That last sentence was loaded, of course. First, how do we define "best" when we say pick the h that "best" approximates f? Second, how do we even come up with the hypothesis functions at all? It turns out those two questions are closely related. We'll go into the answers in more detail in subsequent posts, but for now let's just focus on the runner example.
-
-Let's imagine the simplest hypothesis function we could use to approximate our f: a line. Great, now we've answered out second question: we come up with our hypothesis functions by coming up with different lines and see how well they fit the data. But we still need to define what "best" means when it comes to choosing which line is best. It's not too hard think of a line that fits our data (approximates f) really well. It looks something like this:
-
-![alt text](../images/scatpl_runners_line.png)
+This is quite a wall of text, so we'll stop it here for now. To recap, we're talking about how machine learning relates to pattern recognition, and how most patterns in the world don't have an exact mathematical function defining them that we can discover. The above chart was an example of that. In part 2 of this post we'll go into how predicting runner's 100 meter times as seen in the chart is a great candidate for machine learning, and in the process we'll learn some of the fundamentals of machine learning.
