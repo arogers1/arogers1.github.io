@@ -40,7 +40,7 @@ There are some in-between types of learning that lie between purely supervised a
 
 Another type of learning that isn't quite supervised or unsupervised learning but somewhere in-between is reinforcement learning, which involves learning patterns by trying actions and seeing what kind of positive or negative consequence ensues. Humans do a lot of their learning this way, like learning to ride a bike: you try doing it one way then fall down and get hurt, so you realize you obviously need to change the way you're doing it because that hurt. Or conversely, knowing you're doing it right by the feeling of joy and excitement once you're actually moving and not falling down.
 
-We'll talk more about reinforcement learning in another post, but here's a really cool gif of a RL algorithm having learned to play Pong better than the AI player by playing thousands of games knowing nothing other than the raw pixels and whether it won or lost (so it doesn't know any of the rules of Pong or what the ball or paddle is or anything):
+We'll talk more about reinforcement learning in another post, but here's a really cool video of a RL algorithm having learned to play Pong better than the AI player by playing thousands of games knowing nothing other than the raw pixels and whether it won or lost (so it doesn't know any of the rules of Pong or what the ball or paddle is or anything):
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/YOW8m2YGtRg" frameborder="0" allowfullscreen></iframe>
 
