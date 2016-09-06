@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Building Skynet - Machine Learning, Part 3
@@ -24,7 +23,7 @@ Other examples of supervised learning include teaching a machine to recognize pi
 
 ### Unsupervised Learning
 
-Unsupervised learning problems are those in which you don't have any right answers to begin with, but you know (or suspect) that there are meaningful patterns in the data and want to find those patterns. *Clustering* is a very common type of unsupervised learning, in which you want to group your data into *clusters* according to which data points go well together (by some definition of "going well together"). For example, a company's marketing team may want to group their customers into different market segments based on demographics, habits, interests, and other information. Here's an example of a clustering algorithm being run on the famous Iris dataset, which has data on different types of flowers:
+Unsupervised learning problems are those in which you don't have any right answers to begin with, but you know (or suspect) that there are meaningful patterns in the data and want to find those patterns. *Clustering* is a very common type of unsupervised learning, in which you want to group your data into *clusters* according to which data points go well together (by some definition of "going well together"). For example, a company's marketing team may want to group their customers into different market segments based on demographics, habits, interests, and other information. Here's an example of a clustering algorithm being run on the famous Iris dataset, which has data on different types of flowers. Each color is a cluster, so points of the same color are in the same cluster:
 
 ![alt text](../images/iris_clusters.png)
 
@@ -39,4 +38,8 @@ There are some in-between types of learning that lie between purely supervised a
 
 ### Reinforcement Learning
 
-Another type of learning that isn't quite supervised or unsupervised learning but somewhere in-between
+Another type of learning that isn't quite supervised or unsupervised learning but somewhere in-between is reinforcement learning, which involves learning patterns by trying actions and seeing what kind of positive or negative consequence ensues. Humans do a lot of their learning this way, like learning to ride a bike: you try doing it one way then fall down and get hurt, so you realize you obviously need to change the way you're doing it because that hurt. Or 
+
+We'll talk more about reinforcement learning in another post, but here's a really cool gif of a RL algorithm having learned to play Pong better than the AI player by playing thousands of games knowing nothing other than the raw pixels and whether it won or lost (so it doesn't know any of the rules of Pong or what the ball or paddle is or anything):
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YOW8m2YGtRg" frameborder="0" allowfullscreen></iframe>
